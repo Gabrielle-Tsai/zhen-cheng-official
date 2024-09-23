@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <%- include('./layout/header'); -%>
@@ -23,10 +26,20 @@
     </div>
 
     <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <button type="button" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#exampleModal">
       打開 modal
     </button>
+    <button class="btn" disabled>disabled</button>
+    <button class="btn btn-link">custom</button>
+    <div class="bg-dark">
+      <button class="btn btn-link-dark">custom dark</button>
+    </div>
+    <button class="btn btn-sm btn-brand">small</button>
 
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="radio-1">
+      <label for="radio-1">radio</label>
+    </div>
     <!-- Modal 元件 -->
     <div
       class="modal fade"

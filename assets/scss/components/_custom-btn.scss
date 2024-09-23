@@ -1,0 +1,97 @@
+.btn {
+  border-width: 1px 0 1px 0 !important;
+
+  &:disabled {
+    background: $gray-200;
+    border-color: $gray-500;
+    color: $gray-500;
+  }
+}
+
+.btn-brand {
+  background: $white;
+  border-color: $brand-700;
+  color: $brand-700;
+
+  &:hover {
+    background: $brand-200;
+    border-color: $brand-700;
+  }
+
+  &:active {
+    background: $brand-500 !important;
+  }
+}
+
+.btn-link {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: $gray-700;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0;
+  --bs-btn-hover-color: $brand-500;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: to-rgb(mix(color-contrast($link-color), $link-color, 15%));
+  --bs-btn-active-color: $brand-600;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  text-decoration: none;
+  font-weight: 400;
+
+  &:hover {
+    color: $brand-500;
+  }
+
+  &:disabled {
+    color: $gray-500;
+  }
+}
+
+.btn-link-dark {
+  --bs-btn-font-weight: 600;
+  color: $white;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0;
+  --bs-btn-hover-color: $brand-300;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-focus-shadow-rgb: to-rgb(mix(color-contrast($link-color), $link-color, 15%));
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: transparent;
+  text-decoration: none;
+  font-weight: 400;
+
+  &:hover {
+    color: $brand-300;
+  }
+
+  &:disabled {
+    color: $gray-700;
+  }
+
+  &:active {
+    color: $brand-500 !important;
+  }
+}
+
+.btn-sm {
+  border-width: 0 0 1px 0 !important;
+  border-radius: 0;
+  border-color: $brand-300;
+  color: $brand-300;
+  font-weight: 300;
+  
+  &:hover {
+    background: $white;
+    color: $brand-500;
+    border-color: $brand-500;
+  }
+
+  &:active {
+    color: $brand-700 !important;
+    background: $white !important;
+    border-color: $brand-700;
+  }
+}
