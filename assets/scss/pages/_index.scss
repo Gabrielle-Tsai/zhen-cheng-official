@@ -1,3 +1,50 @@
-.index-title {
-  font-size: 100px;
+.navbar-brand {
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+header {
+  padding-top: calc(86 * (100vh/1080));
+  background: linear-gradient(90deg, rgba(215, 216, 214, 0) 0%, rgba(26, 29, 31, 0.35) 50%, rgba(215, 216, 214, 0) 100%);
+  background: url("../../assets/images/主視覺\ 01.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.writing-vrl {
+  writing-mode: vertical-rl;
+  letter-spacing: .2em;
+}
+
+.introduction {
+  font-size: calc(40 * (100vh/1080));
+  margin-top: calc(100vh * (172 / 1080));
+  margin-bottom: calc(100vh * (128 / 1080));
+
+  .writing-vrl:first-child {
+    margin-left: calc(60 * (100vh/1080));
+  }
+}
+
+.animate-scroll {
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out ;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

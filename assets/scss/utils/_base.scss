@@ -1,0 +1,23 @@
+.form-check-input {
+  &:hover {
+    background-color: $brand-200;
+  }
+}
+
+.form-check-input[type=checkbox]:checked {
+  &:active, &:hover {
+    background-color: $brand-700;
+
+    &::before {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#{$brand-200}" viewBox="0 0 256 256"><path d="M232.49,80.49l-128,128a12,12,0,0,1-17,0l-56-56a12,12,0,1,1,17-17L96,183,215.51,63.51a12,12,0,0,1,17,17Z"></path></svg>') !important;
+    }
+  }
+}
+
+.form-check-input[type="radio"] {
+  background-color: $white;
+
+  &:hover {
+    background-color: $brand-200;
+  }
+}
