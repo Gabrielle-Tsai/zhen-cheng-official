@@ -23,32 +23,64 @@
       </div>
     </header>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- About -->
+     <div class="container about">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex flex-column align-items-center h-100">
+            <div class="fw-light fs-5 h-100 about-intro">
+              <div class="writing-vrl fs-1 text-brand-600 ps-4 border-start border-2 border-brand-300 ms-0 mb-lg-10 mb-4 about-zc">關於溱晟</div>
+              <p class="mb-0">彷彿是在裝修自己的房子的細心與堅持，</p>
+              <p class="mb-0">盡全力去協助解決問題，</p>
+              <p class="mb-0">或許在這個講求經濟和快速的時代顯得有點老派，</p>
+              <p class="mb-0">但是我們對施工品質的要求、對事物負責的態度，</p>
+              <p class="mb-0">是我們給自己心裡那把無法撼動的尺。</p>
+              </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </div>
+        <div class="col-lg-6">
+          <p class="fs-1 text-brand-400 mb-2 fw-light text-end mt-18">Our team member</p>
+          <img src="../assets/images/示意圖01.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="../assets/images/示意圖02.png" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="fw-light fs-5 h-100 d-flex flex-column justify-content-end about-intro mx-auto">
+            <p class="mb-0">建築系本科出身的我們，</p>
+            <p class="mb-0">在乎人與居住環境的關係，</p>
+            <p class="mb-0">設計非常主觀、每人都有不同的喜好和標準，</p>
+            <p class="mb-0">比起盲目追求流行的素材，</p>
+            <p class="mb-0">我們更注重機能和客戶的喜好。</p>
+            <p class="mb-0">在一些固定的客觀條件下，</p>
+            <p class="mb-0">我們盡全力去完成客戶的需求，只要客戶喜歡、用起來舒適，就是好設計。</p>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="d-flex flex-column fs-5 fw-light px-12 justify-content-center h-100">
+            <p class="mb-0"><span class="fs-3 text-brand-500">真誠，</span>是我們的核心價值和行事準則。</p>
+            <p class="mb-0">我們相信，只有以真誠之心對待每一件事、每一個人，</p>
+            <p class="mb-0">才能真正理解並實現他們的需求和夢想。</p>
+            <p class="mb-0">這份真誠讓我們的設計更加貼近生活、更能打造出溫暖舒適的居住空間。</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img src="../assets/images/示意圖03.png" alt="">
+        </div>
+      </div>
+
+      <p class="fs-3 text-brand-700 text-center mb-20"><img src="../assets/images/icon/promise.svg" alt="icon" class="me-3">真誠，是我們對自己的承諾，更是我們對客戶的保證。</p>
+
+      <button class="btn btn-brand d-flex align-items-center mx-auto">
+        了解我們<i class="fs-5 ph-fill ph-arrow-circle-right ms-3"></i>
+      </button>
+     </div>
+    
 
     <%- include('./layout/footer'); -%>
 
