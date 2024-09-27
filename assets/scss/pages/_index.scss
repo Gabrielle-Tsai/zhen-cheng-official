@@ -6,13 +6,17 @@
 }
 
 header {
-  padding-top: calc(86 * (100vh/1080));
+  padding-top: 19px;
   background: linear-gradient(90deg, rgba(215, 216, 214, 0) 0%, rgba(26, 29, 31, 0.35) 50%, rgba(215, 216, 214, 0) 100%);
   background: url("../../assets/images/主視覺\ 01.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
+  
+  @include lg {
+    padding-top: calc(86 * (100vh/1080));
+  }
 }
 
 .writing-vrl {
