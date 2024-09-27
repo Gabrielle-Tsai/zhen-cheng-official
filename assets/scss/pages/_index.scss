@@ -52,3 +52,26 @@ header {
     transform: translateY(0);
   }
 }
+
+// about
+.about {
+  @include lg {
+    padding: 160px 0;
+  }
+
+  .row {
+    margin-bottom: 120px;
+  }
+}
+
+.about-zc {
+  padding-bottom: 64px;
+
+  @include lg {
+    padding-bottom: 116px;
+  }
+}
+
+.about-intro {
+  max-width: 444px;
+}
