@@ -340,6 +340,7 @@ $theme-colors: (
 ) !default;
 
 $theme-colors: map-merge($theme-colors , $brands);
+$theme-colors: map-merge($theme-colors , $grays);
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-text-variables
