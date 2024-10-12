@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <header class="d-flex flex-column">
@@ -81,6 +81,101 @@
       </button>
      </div>
     
+     <!-- TODO: portfolio swiper -->
+     <!-- portfolio -->
+    <div class="bg-brand-100 portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="px-8">
+              <h2 class="writing-vrl bg-brand-700 py-14 px-6 text-white fs-1 mb-10 ms-0 fw-normal">作品實例</h2>
+              <div class="project-card py-8 px-6 d-flex flex-column">
+                <h3 class="fs-1 text-brand-500 mb-0 fw-normal">城市綠洲</h3>
+                <h4 class="fs-3 mb-4 fw-light">林宅 / 新北市中和區</h4>
+                <div class="project-basic text-brand-500 mb-6">
+                  <p class="mb-1">坪數：17.38坪</p>
+                  <p class="mb-1">屋齡：23年</p>
+                  <p>格局：3房2廳1衛</p>
+                </div>
+                <p class="text-brand-800">這個案例展現了如何將23年屋齡的小型公寓改造成寧靜雅致的都市綠洲。設計師巧妙運用淺色調和自然元素，為17坪空間注入清新活力。明亮的客廳配以簡約家具和藝術品，營造出舒適而不擁擠的氛圍。綠植點綴其間，為居住者打造一處遠離喧囂、回歸本真的城市桃源。</p>
+                <button class="btn btn-brand d-flex align-items-center mx-auto mt-auto">
+                  了解作品<i class="fs-5 ph-fill ph-arrow-circle-right ms-3"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="swiper portfolio-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/images/portfolio-1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/portfolio-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/portfolio-3.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- clients' comments -->
+    <div class="clients-comment">
+      <div class="container">
+        <h2 class="text-center mb-15">
+          <span class="fs-1 text-brand-600 p-4 border-bottom border-2 border-brand-300">客戶之聲</span>
+        </h2>
+        <div class="swiper client-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client-card">
+                <div class="client-profile">
+                  <img src="../assets/images/img.png" alt="mr's zhen" class="mb-2">
+                  <p class="fw-light text-center">32歲 / 曾先生</p>
+                </div>
+                <div class="client-badge">室內設計</div>
+                <p class="fw-light client-comment">原本以為找室內設計師就是找人來幫我花錢，沒想到這位設計師不僅幫我省錢，還省腦細胞。
+                  他的創意想法和設計讓我家從狗窩變身成舒適的家，連我媽都誇我有品味，但我有點擔心她之後會一直想來玩。要不是我知道他已經結婚了，我都想把妹妹介紹給他認識了，有實在有讚有推～</p>
+                <button class="btn btn-sm">more</button>
+                <date class="fw-light text-700">2024.07.21</date>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-card">
+                <div class="client-profile">
+                  <img src="../assets/images/img-1.png" alt="mr's lin" class="mb-2">
+                  <p class="fw-light text-center">62歲 / 林爺爺</p>
+                </div>
+                <div class="client-badge">舊屋翻新</div>
+                <p class="fw-light client-comment">
+                  我家是一棟有40年歷史的老房子，問題多得數不清。幸運的是，遇到了這個優秀的設計公司。不僅解決了漏水、線路老化等問題，還在保留老房子特色的同時加入現代感。他改善了採光和通風，讓狹小的空間變得寬敞明亮。最令人驚喜的是，他還為我們設計了許多巧妙的收納空間，徹底解決了雜物堆積的困擾。現在的家不僅安全舒適，還充滿了生機和活力，可以讓孫女常常來玩。
+                </p>
+                <button class="btn btn-sm">more</button>
+                <date class="fw-light text-700">2024.03.21</date>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-card">
+                <div class="client-profile">
+                  <img src="../assets/images/img-2.png" alt="ms's liao" class="mb-2">
+                  <p class="fw-light text-center">44歲 / 廖小姐</p>
+                </div>
+                <div class="client-badge">室內改造</div>
+                <p class="fw-light client-comment">設計師的用心令人感動。從頭到尾，他都專注於實現我們的願望，同時不忘提供專業建議，看怎麼樣能夠在有限的預算內盡善盡美。
+                  他們對細節的關注和追求完美的態度，還有誠懇地和我們溝通，讓整個過程輕鬆愉快。現在我和老公每天回到改造後的家，都讓我們覺得夢想成真，真的是舒適的避風港灣。</p>
+                <button class="btn btn-sm">more</button>
+                <date class="fw-light text-700">2024.01.05</date>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- FAQ -->
     <div class="faq">
       <div class="container px-6">
@@ -172,12 +267,15 @@
           </div>
         </div>
 
-        <button class="btn btn-link text-white d-block ms-auto" type="button">更多相關問題與服務內容<i class="ph ph-arrow-right ms-4"></i></button>
+        <button class="btn btn-link text-white d-block ms-auto" type="button">更多相關問題與服務內容<i
+            class="ph ph-arrow-right ms-4"></i></button>
       </div>
     </div>
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

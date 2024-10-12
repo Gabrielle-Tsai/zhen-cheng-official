@@ -76,6 +76,26 @@ header {
   max-width: 444px;
 }
 
+// portfolio
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.project-card {
+  background: rgba(242, 243, 244, 0.8);
+
+  @include pad {
+    height: 555px;
+  }
+}
+
+// clients' comments
+.clients-comment {
+  padding-top: 96px;
+  padding-bottom: 112px;
+}
+
 // FAQ
 .faq {
   padding: 32px 0;
