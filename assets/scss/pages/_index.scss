@@ -95,3 +95,58 @@ header {
   padding-top: 96px;
   padding-bottom: 112px;
 }
+
+// FAQ
+.faq {
+  padding: 32px 0;
+  background: url('/assets/images/bgc.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  .title {
+    font-size: $h4-font-size;
+    @include pad {
+      font-size: $h1-font-size;
+    }
+  }
+
+  & {
+    @include pad {
+      padding: 120px 0;
+    }
+  }
+}
+
+.accordion-button {
+  color: $gray-900;
+  font-weight: 300;
+  font-size: $h6-font-size;
+  padding: 20px 32px;
+
+  @include pad {
+    font-size: $h3-font-size;
+    padding: 48px 40px;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  padding: 20px 32px 8px 32px;
+  @include pad {
+    padding: 48px 40px 24px 40px;
+  }
+}
+
+.accordion-body {
+  border-top: 1px solid $brand-200;
+  padding: 8px 56px 20px 56px;
+  font-weight: 300;
+  font-size: $h6-font-size;
+  
+  @include pad {
+    font-size: $h4-font-size;
+    padding: 24px 48px 48px 40px;
+    margin-left: 1.25em;
+  }
+}
