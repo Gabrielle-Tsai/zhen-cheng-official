@@ -80,6 +80,7 @@ header {
 .portfolio {
   padding-top: 100px;
   padding-bottom: 80px;
+  padding-left: calc(312px - 1920px + 100vw);
 }
 
 .project-card {
@@ -90,10 +91,104 @@ header {
   }
 }
 
+.portfolio-swiper {
+  height: 100%;
+
+  .swiper-wrapper {
+    padding-left: 80px;
+  }
+}
+
+.portfolio-swiper .swiper-slide-next {
+  opacity: 0.4;
+}
+
+.portfolio-swiper .swiper-button-prev {
+  left: 20px;
+}
+
+.portfolio-swiper .swiper-button-next {
+  left: calc(50% + 60px);
+}
+
+.portfolio-swiper .swiper-button-prev::after {
+  content: '';
+  background: url('/assets/images/icon/chevron-compact-left.svg');
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+
+.portfolio-swiper .swiper-button-next::after {
+  content: '';
+  background: url('/assets/images/icon/chevron-compact-right.svg');
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+}
+
+.portfolio .swiper-slide img {
+  height: 100%;
+  object-fit: cover;
+}
+
 // clients' comments
 .clients-comment {
-  padding-top: 96px;
-  padding-bottom: 112px;
+  padding: 32px 0;
+
+  @include pad {
+    padding-top: 96px;
+    padding-bottom: 112px;
+  }
+}
+
+.client-card-footer {
+  text-align: right;
+
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include pad {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    button {
+      margin: unset;
+    }
+  }
+}
+
+.client-swiper {
+  .swiper-slide {
+    padding: 0 56.5px;
+
+    @include pad {
+      padding: unset;
+    }
+  }
+}
+
+.client-swiper .swiper-button-prev::after {
+  content: '';
+  background: url('/assets/images/icon/chevron-compact-left.svg');
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
+}
+
+.client-swiper .swiper-button-next::after {
+  content: '';
+  background: url('/assets/images/icon/chevron-compact-right.svg');
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-size: cover;
 }
 
 // FAQ
