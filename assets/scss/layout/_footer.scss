@@ -1,4 +1,48 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+  padding: 40px 0;
+
+  @include pad {
+    padding: 120px 0;
+  }
+
+  h2 {
+    width: fit-content;
+    margin: 0 auto;
+
+    @include pad {
+      margin: 0;
+    }
+  }
+
+  .brand-logo {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.map {
+  display: block;
+  margin: 0 auto;
+  width: 335px;
+
+  @include pad {
+    width: 469px;
+  }
+}
+
+.media-icon {
+  width: 32px;
+  height: 32px;
+  
+  @include pad {
+    margin-right: 56px;
+  }
+}
+
+.map-block {
+  margin-top: 194px;
+
+  @include pad {
+    margin-top: 0;
+  }
 }
