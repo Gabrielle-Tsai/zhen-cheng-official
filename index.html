@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script type="module" crossorigin src="/zhen-cheng-official/assets/bootstrap.min-acf58cd3.js"></script>
-    <link rel="stylesheet" href="/zhen-cheng-official/assets/bootstrap-3ec8fcab.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script type="module" crossorigin src="/zhen-cheng-official/assets/main-f18ba6ea.js"></script>
+    <link rel="stylesheet" href="/zhen-cheng-official/assets/main-9b31ecf2.css">
   </head>
   <body>
     <header class="d-flex flex-column">
@@ -18,16 +18,16 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center d-block d-lg-none" href="#">
-        <img src="/zhen-cheng-official/assets/logozhen-cheng-a52a2441.svg" alt="logo" class="me-2">
+        <img src="/zhen-cheng-official/assets/logozhen-cheng-0be8589d.svg" alt="logo" class="me-2">
         <h1 class="fs-6 fw-normal mb-0 text-white">溱晟空間設計</h1>
       </a>
-      <button class="navbar-toggler btn border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Toggle navigation">
         <i class="ph-light ph-list text-white"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse">
         <ul class="navbar-nav w-100 justify-content-between">
           <a class="navbar-brand align-items-center d-none d-lg-flex" href="#">
-            <img src="/zhen-cheng-official/assets/logozhen-cheng-a52a2441.svg" alt="logo" class="me-2">
+            <img src="/zhen-cheng-official/assets/logozhen-cheng-0be8589d.svg" alt="logo" class="me-2">
             <h1 class="fs-6 fw-normal mb-0 text-white">溱晟空間設計</h1>
           </a>
           <li class="nav-item">
@@ -49,6 +49,39 @@
       </div>
     </div>
   </nav>
+</div>
+
+<!-- rwd offcanvas menu-->
+<div class="offcanvas offcanvas-end bg-brand-700" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+  <div class="offcanvas-header pt-8 pb-4">
+    <a class="navbar-brand align-items-center d-flex" href="#">
+      <img src="/zhen-cheng-official/assets/logozhen-cheng-0be8589d.svg" alt="logo" class="me-2">
+      <h1 class="fs-6 fw-normal mb-0 text-white">溱晟空間設計</h1>
+    </a>
+    <a type="button" class="navbar-toggler btn border-0 ms-auto fs-4" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="ph-light ph-list text-white"></i>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+        <a class="py-4 nav-link text-center" href="#">關於我們</a>
+      </li>
+      <li class="nav-item">
+        <a class="py-4 nav-link text-center" href="#">作品實例</a>
+      </li>
+      <li class="nav-item">
+        <a class="py-4 nav-link text-center" href="#">服務項目</a>
+      </li>
+      <li class="nav-item">
+        <a class="py-4 nav-link text-center" href="#">預約諮詢</a>
+      </li>
+      <li class="nav-item">
+        <a class="py-4 nav-link text-center" href="#">文章消息</a>
+      </li>
+    </ul>
+  </div>
 </div>      <div class="d-flex flex-row-reverse text-white lh-base justify-content-center introduction">
         <p class="writing-vrl me-0">以建築之眼</p>
         <p class="writing-vrl mx-0 pt-lg-15 pt-10">繪製生活藍圖</p>
@@ -59,34 +92,274 @@
       </div>
     </header>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- About -->
+     <div class="container about">
+      <div class="row gy-3">
+        <div class="col-lg-6">
+          <div class="d-flex flex-column align-items-lg-center h-100">
+            <div class="fw-light h-100 about-intro">
+              <div class="writing-vrl fs-lg-1 fs-3 text-brand-600 ps-4 border-start border-2 border-brand-300 ms-0 mb-lg-10 mb-4 about-zc">關於溱晟</div>
+              <p class="mb-0">彷彿是在裝修自己的房子的細心與堅持，</p>
+              <p class="mb-0">盡全力去協助解決問題，</p>
+              <p class="mb-0">或許在這個講求經濟和快速的時代顯得有點老派，</p>
+              <p class="mb-0">但是我們對施工品質的要求、對事物負責的態度，</p>
+              <p class="mb-0">是我們給自己心裡那把無法撼動的尺。</p>
+              </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </div>
+        <div class="col-lg-6">
+          <p class="fs-lg-1 text-brand-400 mb-0 mb-lg-2 fw-light text-lg-end mt-lg-18">Our team member</p>
+          <img src="/zhen-cheng-official/assets/示意圖01-78caa1cb.png" alt="">
+        </div>
+      </div>
+
+      <div class="row d-flex flex-lg-row-reverse gy-3">
+        <div class="col-lg-6">
+          <div class="fw-light h-100 d-flex flex-column justify-content-end about-intro mx-auto">
+            <p class="mb-0">建築系本科出身的我們，</p>
+            <p class="mb-0">在乎人與居住環境的關係，</p>
+            <p class="mb-0">設計非常主觀、每人都有不同的喜好和標準，</p>
+            <p class="mb-0">比起盲目追求流行的素材，</p>
+            <p class="mb-0">我們更注重機能和客戶的喜好。</p>
+            <p class="mb-0">在一些固定的客觀條件下，</p>
+            <p class="mb-0">我們盡全力去完成客戶的需求，只要客戶喜歡、用起來舒適，就是好設計。</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="/zhen-cheng-official/assets/示意圖02-779ec519.png" alt="">
+        </div>
+      </div>
+
+      <div class="row gy-3">
+        <div class="col-lg-7">
+          <div class="d-flex flex-column fw-light px-lg-12 justify-content-center h-100">
+            <p class="mb-0"><span class="fs-lg-3 text-brand-500">真誠，</span>是我們的核心價值和行事準則。</p>
+            <p class="mb-0">我們相信，只有以真誠之心對待每一件事、每一個人，</p>
+            <p class="mb-0">才能真正理解並實現他們的需求和夢想。</p>
+            <p class="mb-0">這份真誠讓我們的設計更加貼近生活、更能打造出溫暖舒適的居住空間。</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img src="/zhen-cheng-official/assets/示意圖03-94a64fc6.png" alt="">
+        </div>
+      </div>
+
+      <div class="d-flex flex-column justify-content-center align-items-center mb-lg-20 flex-lg-row p-12 p-lg-0">
+        <img src="/zhen-cheng-official/assets/promise-ab00affd.svg" alt="icon" class="me-lg-3 about-icon">
+        <p class="fs-lg-3 text-brand-700 text-center mb-0">真誠，<br class="d-block d-lg-none">是我們對自己的承諾，<br class="d-block d-lg-none">更是我們對客戶的保證。</p>
+      </div>
+
+      <button class="btn btn-brand d-flex align-items-center mx-auto">
+        了解我們<i class="fs-5 ph-fill ph-arrow-circle-right ms-3"></i>
+      </button>
+     </div>
+    
+     <!-- portfolio -->
+    <div class="bg-brand-100 portfolio">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="px-8">
+              <h2 class="writing-vrl bg-brand-700 py-14 px-6 text-white fs-1 mb-10 ms-0 fw-normal">作品實例</h2>
+              <div class="project-card py-8 px-6 d-flex flex-column">
+                <h3 class="fs-1 text-brand-500 mb-0 fw-normal">城市綠洲</h3>
+                <h4 class="fs-3 mb-4 fw-light">林宅 / 新北市中和區</h4>
+                <div class="project-basic text-brand-500 mb-6">
+                  <p class="mb-1">坪數：17.38坪</p>
+                  <p class="mb-1">屋齡：23年</p>
+                  <p>格局：3房2廳1衛</p>
+                </div>
+                <p class="text-brand-800">這個案例展現了如何將23年屋齡的小型公寓改造成寧靜雅致的都市綠洲。設計師巧妙運用淺色調和自然元素，為17坪空間注入清新活力。明亮的客廳配以簡約家具和藝術品，營造出舒適而不擁擠的氛圍。綠植點綴其間，為居住者打造一處遠離喧囂、回歸本真的城市桃源。</p>
+                <button class="btn btn-brand d-flex align-items-center mx-auto mt-auto">
+                  了解作品<i class="fs-5 ph-fill ph-arrow-circle-right ms-3"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="swiper portfolio-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/zhen-cheng-official/assets/portfolio-1-167ed68d.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/zhen-cheng-official/assets/portfolio-2-b148b9c6.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="/zhen-cheng-official/assets/portfolio-3-1c4610e0.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- clients' comments -->
+    <div class="clients-comment">
+      <div class="container">
+        <h2 class="text-center mb-15">
+          <span class="fs-lg-1 fs-4 text-brand-600 p-4 border-bottom border-2 border-brand-300">客戶之聲</span>
+        </h2>
+        <div class="swiper client-swiper mb-4 mb-lg-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client-card">
+                <div class="client-profile">
+                  <img src="/zhen-cheng-official/assets/img-7bbf9315.png" alt="mr's zhen" class="mb-2">
+                  <p class="fw-light text-center">32歲 / 曾先生</p>
+                </div>
+                <div class="client-badge">室內設計</div>
+                <p class="fs-lg-4 fw-light client-comment mb-0">原本以為找室內設計師就是找人來幫我花錢，沒想到這位設計師不僅幫我省錢，還省腦細胞。
+                  他的創意想法和設計讓我家從狗窩變身成舒適的家，連我媽都誇我有品味，但我有點擔心她之後會一直想來玩。要不是我知道他已經結婚了，我都想把妹妹介紹給他認識了，有實在有讚有推～</p>
+                <div class="client-card-footer">
+                  <button class="btn btn-sm">more</button>
+                  <date class="fw-light text-700">2024.07.21</date>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-card">
+                <div class="client-profile">
+                  <img src="/zhen-cheng-official/assets/img-1-7381d3e7.png" alt="mr's lin" class="mb-2">
+                  <p class="fw-light text-center">62歲 / 林爺爺</p>
+                </div>
+                <div class="client-badge">舊屋翻新</div>
+                <p class="fs-lg-4 fw-light client-comment mb-0">
+                  我家是一棟有40年歷史的老房子，問題多得數不清。幸運的是，遇到了這個優秀的設計公司。不僅解決了漏水、線路老化等問題，還在保留老房子特色的同時加入現代感。他改善了採光和通風，讓狹小的空間變得寬敞明亮。最令人驚喜的是，他還為我們設計了許多巧妙的收納空間，徹底解決了雜物堆積的困擾。現在的家不僅安全舒適，還充滿了生機和活力，可以讓孫女常常來玩。
+                </p>
+                <div class="client-card-footer">
+                  <button class="btn btn-sm">more</button>
+                  <date class="fw-light text-700">2024.03.21</date>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-card">
+                <div class="client-profile">
+                  <img src="/zhen-cheng-official/assets/img-2-ef42b366.png" alt="ms's liao" class="mb-2">
+                  <p class="fw-light text-center">44歲 / 廖小姐</p>
+                </div>
+                <div class="client-badge">室內改造</div>
+                <p class="fs-lg-4 fw-light client-comment mb-0">設計師的用心令人感動。從頭到尾，他都專注於實現我們的願望，同時不忘提供專業建議，看怎麼樣能夠在有限的預算內盡善盡美。
+                  他們對細節的關注和追求完美的態度，還有誠懇地和我們溝通，讓整個過程輕鬆愉快。現在我和老公每天回到改造後的家，都讓我們覺得夢想成真，真的是舒適的避風港灣。</p>
+                <div class="client-card-footer">
+                  <button class="btn btn-sm">more</button>
+                  <date class="fw-light text-700">2024.01.05</date>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <button class="btn btn-link text-gray-700 d-block ms-auto" type="button">更多客戶評論<i
+            class="ph ph-arrow-right ms-4"></i></button>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+      <div class="container px-6">
+        <div class="title text-white mb-lg-15 text-center text-lg-start mb-6">常見問題</div>
+        <div class="accordion bg-brand-100 px-0 mb-lg-15 mb-4" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Q.  如果我想要預約諮詢，需要提供哪些資訊？
+              </button>
+            </h3>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                建議先搜尋好喜歡的室內風格方向圖片，並且確定好大概的預算，也可以就一些需求面，例如：是否會需要更動浴室，隔間等做好想像，接著預約諮詢會更有效率。
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Q.  請問從初次接觸到結束工程大概需要多少時間？
+              </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Q2
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Q.  請問收費標準是如何計算的？
+              </button>
+            </h3>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Q3
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Q.  請問服務範圍是否包含施工監督呢？
+              </button>
+            </h3>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Q4
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Q.  如果我對設計方案不滿意，可以要求修改嗎？
+              </button>
+            </h3>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Q5
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Q.  如果我的預算有限，是不是就沒有辦法委託？
+              </button>
+            </h3>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Q6
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Q.  完工後，如果發現一些小問題，是否有提供售後服務？
+              </button>
+            </h3>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Q7
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-link text-white d-block ms-auto" type="button">更多相關問題與服務內容<i
+            class="ph ph-arrow-right ms-4"></i></button>
+      </div>
+    </div>
+
     <footer class="footer">我是 footer</footer>
     
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
