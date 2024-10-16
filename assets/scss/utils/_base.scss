@@ -25,3 +25,17 @@ img {
     background-color: $brand-200;
   }
 }
+
+$breakpoints: map-keys($grid-breakpoints);
+
+@each $breakpoint in $breakpoints {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $key, $value in $font-sizes {
+      .fs#{$infix}-#{$key} {
+        font-size: $value !important;
+      }
+    }
+  }
+}
