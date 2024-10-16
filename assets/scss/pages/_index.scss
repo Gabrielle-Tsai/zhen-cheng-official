@@ -102,9 +102,14 @@ header {
 
 // portfolio
 .portfolio {
-  padding-top: 100px;
-  padding-bottom: 80px;
-  padding-left: calc(312px - 1920px + 100vw);
+  padding-top: 32px;
+  padding-bottom: 48px;
+
+  @include pad {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: calc(312px - 1920px + 100vw);
+  }
 }
 
 .project-card {
@@ -115,11 +120,48 @@ header {
   }
 }
 
+.portfolio-intro {
+  position: absolute;
+  bottom: 0;
+  left: 36px;
+  right: 36px;
+  background: rgba(242, 243, 244, 1);
+  padding: 16px;
+
+  .preview-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+  }
+
+  @include pad {
+    left: 0;
+    right: 0;
+  }
+
+  @include lg {
+    display: none;
+  }
+}
+
 .portfolio-swiper {
   height: 100%;
+  min-height: 607px;
 
-  .swiper-wrapper {
-    padding-left: 80px;
+
+  .swiper-slide {
+    padding: 0 36px;
+  }
+
+  @include pad {
+    .swiper-wrapper {
+      padding-left: 80px;
+    }
+
+    .swiper-slide {  
+      padding: unset;
+    }
   }
 }
 
@@ -128,29 +170,46 @@ header {
 }
 
 .portfolio-swiper .swiper-button-prev {
-  left: 20px;
+  left: 0px;
+
+  @include pad {
+    left: 20px;
+  }
 }
 
 .portfolio-swiper .swiper-button-next {
-  left: calc(50% + 60px);
+  right: 0;
+  @include pad {
+    left: calc(50% + 60px);
+  }
 }
 
 .portfolio-swiper .swiper-button-prev::after {
   content: '';
   background: url('/assets/images/icon/chevron-compact-left.svg');
   position: absolute;
-  width: 80px;
-  height: 80px;
   background-size: cover;
+  width: 48px;
+  height: 48px;
+
+  @include pad {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .portfolio-swiper .swiper-button-next::after {
   content: '';
   background: url('/assets/images/icon/chevron-compact-right.svg');
   position: absolute;
-  width: 80px;
-  height: 80px;
   background-size: cover;
+  width: 48px;
+  height: 48px;
+
+  @include pad {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .portfolio .swiper-slide img {

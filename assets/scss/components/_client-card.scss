@@ -1,15 +1,16 @@
 .client-profile {
     text-align: center;
-    margin-bottom: 16px;
     font-size: 12px;
-
+    margin-bottom: 8px;
+    
     img {
         width: 150px;
         height: 150px;
     }
-
+    
     @include pad {
         font-size: 1rem;
+        margin-bottom: 16px;
 
         img {
             width: 250px;

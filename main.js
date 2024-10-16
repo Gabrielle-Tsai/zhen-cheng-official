@@ -2,9 +2,16 @@ import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 const swiperPortfolio = new Swiper(".portfolio-swiper", {
-  slidesPerView: 2,
-  speed: 400,
-  spaceBetween: 100,
+  slidesPerView: 1,
+  spaceBetween: 36,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      speed: 400,
+      spaceBetween: 100,
+    }
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
