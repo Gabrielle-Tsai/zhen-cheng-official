@@ -117,15 +117,15 @@
                 <div class="swiper-slide">
                   <img src="../assets/images/portfolio-1.jpg" alt="">
                   <div class="portfolio-intro">
-                    <div class="fs-5 text-brand-600 mb-3">城市綠洲
-                      <span class="text-gray-700 fs-7">林宅 / 新北市中和區</span>
+                    <div class="fs-5 text-brand-600 mb-12 pe-lg-7">城市綠洲
+                      <span class="text-700 fs-7">林宅 / 新北市中和區</span>
                     </div>
-                    <div class="fs-light fs-7 text-gray-700">
+                    <div class="fs-light fs-7 text-700">
                       <p class="mb-0">坪數：17.38坪</p>
                       <p class="mb-0">屋齡：23年</p>
                       <p class="mb-0">格局：3房2廳1衛</p>
                     </div>
-                    <button class="btn preview-btn fs-7 text-gray-700 d-flex align-items-center">
+                    <button class="btn preview-btn fs-7 text-700 d-flex align-items-center">
                       預覽室內
                       <img src="../assets/images/icon/door-open-fill.svg" alt="" class="ms-1">
                     </button>
@@ -211,7 +211,7 @@
           <div class="swiper-button-next"></div>
         </div>
 
-        <button class="btn btn-link text-gray-700 d-block ms-auto" type="button">更多客戶評論<i
+        <button class="btn btn-link text-700 d-block ms-auto" type="button">更多客戶評論<i
             class="ph ph-arrow-right ms-4"></i></button>
       </div>
     </div>
@@ -309,6 +309,238 @@
 
         <button class="btn btn-link text-white d-block ms-auto" type="button">更多相關問題與服務內容<i
             class="ph ph-arrow-right ms-4"></i></button>
+      </div>
+    </div>
+
+    <!-- Reservation -->
+    <div class="reservation">
+      <div class="container">
+        <h2 class="fs-lg-1 fs-4 text-center mb-10 mb-lg-20">預約諮詢</h2>
+        <form class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-lg-12 mb-10 pe-lg-7">
+                <label for="name" class="form-label">姓名 <span class="text-danger">*</span></label>
+                <div class="d-flex align-items-center">
+                  <input type="text" class="form-control me-6" id="name" placeholder="如何稱呼？">
+                  <div class="form-check form-check-inline flex-shrink-0 me-6">
+                    <input class="form-check-input" type="radio" id="gender-1" name="gender" value="male">
+                    <label class="form-check-label" for="gender-1">先生</label>
+                  </div>
+                  <div class="form-check form-check-inline flex-shrink-0">
+                    <input class="form-check-input" type="radio" id="gender-2" name="gender" value="female">
+                    <label class="form-check-label" for="gender-2">小姐</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="mb-lg-12 mb-10 pe-lg-7">
+                <label for="phone" class="form-label">聯絡電話 <span class="text-danger">*</span></label>
+                <input class="form-control" id="phone" type="tel" placeholder="0900-000-000">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-lg-12 mb-10 ps-lg-7">
+                <label for="email" class="form-label">電子信箱 <span class="text-danger">*</span></label>
+                <input class="form-control" id="email" type="email" placeholder="sample@gmail.com">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-lg-12 mb-10 pe-lg-7">
+                <label for="sqm" class="form-label">空間坪數 <span class="text-danger">*</span></label>
+                <div class="d-flex align-items-center">
+                  <input type="number" class="form-control sqm me-2" id="sqm" placeholder="ex.10">
+                  <div class="form-text me-8">坪</div>
+                  <span class="text-brand-400">坪數要如何計算？</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-lg-12 mb-10 ps-lg-7">
+                <label for="budget" class="form-label">預算 <span class="text-danger">*</span></label>
+                <div class="d-flex align-items-center">
+                  <input type="number" class="form-control budget" id="budget" placeholder="ex.1">
+                  <div class="form-text">萬</div>
+                  <div class="form-text mx-4">～</div>
+                  <input type="number" class="form-control budget" id="budget-max" placeholder="ex.1">
+                  <div class="form-text">萬</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-lg-12 mb-10 pe-lg-7">
+                <label for="consult" class="form-label mb-6">
+                  諮詢內容 <span class="text-danger">*</span>
+                </label>
+                <div class="form-check d-flex align-items-center mb-4">
+                  <input class="form-check-input" type="radio" name="consult" id="consult1">
+                  <label class="ms-4 form-text" for="consult1">
+                    空間設計裝修
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center mb-4">
+                  <input class="form-check-input" type="radio" name="consult" id="consult2">
+                  <label class="ms-4 form-text" for="consult2">
+                    客變服務
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input" type="radio" name="consult" id="consult3">
+                  <label class="ms-4 form-text" for="consult3">
+                    其他
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-lg-12 mb-10 ps-lg-7">
+                <label for="consultPlace" class="form-label mb-6">
+                  諮詢地點 <span class="text-danger">*</span>
+                </label>
+                <div class="form-check d-flex align-items-center mb-4">
+                  <input class="form-check-input" type="radio" name="consultPlace" id="consultPlace1">
+                  <label class="form-text ms-4" for="consultPlace1">
+                    溱晟辦公室，地址：<a href="#" class="link-primary">新北市中和區宜安路173號304室<i class="ph-fill ph-map-pin ms-2"></i></a>
+                  </label>
+                </div>
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input" type="radio" name="consultPlace" id="consultPlace2">
+                  <label class="form-text ms-4" for="consultPlace2">
+                    請設計師致電另約地點
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-lg-12 mb-10 pe-lg-7">
+                <label for="date1" class="form-label mb-2">偏好時間排序 <span class="text-danger">*</span></label>
+                <p class="text-brand-400 fw-light">最多三個，若所選時間皆無法配合，設計師將致電與您直接約時間。</p>
+                <div class="d-flex align-items-center mb-4">
+                  <input type="text" class="form-control me-2 date" placeholder="請選擇日期" id="date1">
+                  <i class="ph ph-calendar-blank fs-4 text-brand-300 me-8"></i>
+                  <select class="form-select me-8" aria-label="time select example">
+                    <option selected>當日時間皆可</option>
+                    <option value="9">09:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                    <option value="14">14:00</option>
+                    <option value="15">15:00</option>
+                    <option value="16">16:00</option>
+                    <option value="17">17:00</option>
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                    <option value="20">20:00</option>
+                    <option value="21">21:00</option>
+                  </select>
+                  <i class="ph ph-x text-white fs-4"></i>
+                </div>
+                <div class="d-flex align-items-center mb-4">
+                  <input type="text" class="form-control me-2 date" placeholder="請選擇日期" id="date1">
+                  <i class="ph ph-calendar-blank fs-4 text-brand-300 me-8"></i>
+                  <select class="form-select me-8" aria-label="time select example">
+                    <option selected>當日時間皆可</option>
+                    <option value="9">09:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                    <option value="14">14:00</option>
+                    <option value="15">15:00</option>
+                    <option value="16">16:00</option>
+                    <option value="17">17:00</option>
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                    <option value="20">20:00</option>
+                    <option value="21">21:00</option>
+                  </select>
+                  <button class="btn p-0 fs-4">
+                    <i class="ph ph-x text-600"></i>
+                  </button>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input type="text" class="form-control me-2 date" placeholder="請選擇日期" id="date1">
+                  <i class="ph ph-calendar-blank fs-4 text-brand-300 me-8"></i>
+                  <select class="form-select me-8" aria-label="time select example">
+                    <option selected>當日時間皆可</option>
+                    <option value="9">09:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                    <option value="14">14:00</option>
+                    <option value="15">15:00</option>
+                    <option value="16">16:00</option>
+                    <option value="17">17:00</option>
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                    <option value="20">20:00</option>
+                    <option value="21">21:00</option>
+                  </select>
+                  <button class="btn p-0 fs-4">
+                    <i class="ph ph-x text-600"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-lg-12 mb-10">
+                <label class="form-label mb-2">空間平面圖</label>
+                <p class="text-brand-400 fw-light mb-6">為方便諮詢，請事先上傳 或 當日攜帶空間平面圖</p>
+                <label for="reference" class="reference text-center">
+                  <p class="text-700"><i class="ph ph-plus fs-4"></i><br>上傳圖片</p>
+                  <input type="file" id="reference" class="reference-file">
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-lg-12 mb-10">
+                <label class="form-label mb-2">喜好風格</label>
+                <p class="text-brand-400 fw-light mb-6">至多三張</p>
+                <div class="swiper file-swiper ms-0">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <label for="styleFile1" class="style text-center me-6">
+                        <p class="text-700"><i class="ph ph-plus fs-4"></i><br>上傳圖片</p>
+                        <input class="style-file" type="file" id="styleFile1">
+                      </label>
+                    </div>  
+                    <div class="swiper-slide">
+                      <label for="styleFile2" class="style text-center me-6">
+                        <p class="text-700"><i class="ph ph-plus fs-4"></i><br>上傳圖片</p>
+                        <input class="style-file" type="file" id="styleFile2">
+                      </label>
+                    </div>  
+                    <div class="swiper-slide">
+                      <label for="styleFile3" class="style text-center">
+                        <p class="text-700"><i class="ph ph-plus fs-4"></i><br>上傳圖片</p>
+                        <input class="style-file" type="file" id="styleFile3">
+                      </label>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-20">
+                <label for="note" class="form-label mb-6">其他補充</label>
+                <textarea name="note" id="note" placeholder="若有其他補充事項，或需要告知我們的事項，歡迎填寫於此。" class="form-control note-textarea"></textarea>
+                <div class="form-check d-flex align-items-center">
+                  <input class="form-check-input me-4" type="checkbox" value="" id="notRobot">
+                  <label class="form-text" for="notRobot">
+                    我不是機器人
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-brand-500 fs-4 text-white w-100" type="button">送出表單<i class="ph ph-arrow-right ms-4"></i></button>
+        </form>
       </div>
     </div>
 

@@ -605,7 +605,7 @@ $component-active-bg:         $primary !default;
 // scss-docs-start focus-ring-variables
 $focus-ring-width:      .25rem !default;
 $focus-ring-opacity:    .25 !default;
-$focus-ring-color:      rgba($primary, $focus-ring-opacity) !default;
+$focus-ring-color:      rgba($brand-500, $focus-ring-opacity); //rgba($primary, $focus-ring-opacity) !default;
 $focus-ring-blur:       0 !default;
 $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color !default;
 // scss-docs-end focus-ring-variables
@@ -905,18 +905,18 @@ $btn-active-border-tint-amount:   10% !default;
 
 // scss-docs-start form-text-variables
 $form-text-margin-top:                  .25rem !default;
-$form-text-font-size:                   $small-font-size !default;
+$form-text-font-size:                   20px; //$small-font-size !default;
 $form-text-font-style:                  null !default;
-$form-text-font-weight:                 null !default;
-$form-text-color:                       var(--#{$prefix}secondary-color) !default;
+$form-text-font-weight:                 300; //null !default;
+$form-text-color:                       $gray-900; //var(--#{$prefix}secondary-color) !default;
 // scss-docs-end form-text-variables
 
 // scss-docs-start form-label-variables
-$form-label-margin-bottom:              .5rem !default;
-$form-label-font-size:                  null !default;
+$form-label-margin-bottom:              0;//.5rem !default;
+$form-label-font-size:                  1rem; //null !default;
 $form-label-font-style:                 null !default;
-$form-label-font-weight:                null !default;
-$form-label-color:                      null !default;
+$form-label-font-weight:                400; //null !default;
+$form-label-color:                      $brand-600; //null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
@@ -1036,14 +1036,14 @@ $input-group-addon-border-color:        $input-border-color !default;
 // scss-docs-end input-group-variables
 
 // scss-docs-start form-select-variables
-$form-select-padding-y:             $input-padding-y !default;
-$form-select-padding-x:             $input-padding-x !default;
+$form-select-padding-y:             .5rem; //$input-padding-y !default;
+$form-select-padding-x:             1rem; //$input-padding-x !default;
 $form-select-font-family:           $input-font-family !default;
 $form-select-font-size:             $input-font-size !default;
 $form-select-indicator-padding:     $form-select-padding-x * 3 !default; // Extra padding for background-image
-$form-select-font-weight:           $input-font-weight !default;
+$form-select-font-weight:           300; //$input-font-weight !default;
 $form-select-line-height:           $input-line-height !default;
-$form-select-color:                 $input-color !default;
+$form-select-color:                 $gray-700; //$input-color !default;
 $form-select-bg:                    $input-bg !default;
 $form-select-disabled-color:        null !default;
 $form-select-disabled-bg:           $input-disabled-bg !default;

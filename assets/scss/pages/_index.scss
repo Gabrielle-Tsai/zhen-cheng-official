@@ -328,3 +328,25 @@ header {
     margin-left: 1.25em;
   }
 }
+
+// reservation
+.reservation {
+  padding: 48px 0;
+
+  @include pad {
+    padding: 120px 0;
+  }
+}
+
+.sqm, .budget {
+  width: 80px;
+  margin-right: 8px;
+}
+
+.reservation-btn {
+  padding: 21.5px 0;
+}
+
+.file-swiper {
+  max-width: 648px;
+}

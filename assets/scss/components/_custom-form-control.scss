@@ -1,0 +1,64 @@
+.form-control {
+    padding: 16px 0;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    border-color: $brand-700;
+
+    &::placeholder {
+        font-size: 24px;
+        font-weight: 300;
+        color: $gray-500;
+    }
+}
+
+.form-text {
+    margin-top: 0;
+}
+
+.date {
+    &::placeholder {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+.reference, .style {
+    position: relative;
+    background: $gray-400;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+
+    p {
+        margin: 50% 0;
+        transform: translateY(-50%);
+    }
+}
+
+.reference-file,
+.style-file {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.note-textarea {
+    padding: 16px 32px;
+    border-radius: 20px;
+    border: 1px solid $brand-700;
+    margin-bottom: 24px;
+    font-weight: 20px;
+    height: 212px;
+    resize: none;
+
+    &::placeholder {
+        font-weight: 20;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    @include pad {
+        height: 152px;
+    }
+}

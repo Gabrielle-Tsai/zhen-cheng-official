@@ -45,3 +45,15 @@ const swiperClient = new Swiper(".client-swiper", {
     rows: 1,
   },
 });
+
+const swiperFile = new Swiper(".file-swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 24,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+  }
+})
